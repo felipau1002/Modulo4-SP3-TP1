@@ -1,0 +1,252 @@
+[
+  {
+    "id": 1,
+    "nombre": "The Legend of Zelda: Breath of the Wild",
+    "lanzamiento": 2017,
+    "sinopsis": "Link despierta en un reino de Hyrule devastado y debe recuperar sus recuerdos para derrotar a Ganon y salvar a Zelda.",
+    "imagen": "/assets/zelda-breath-of-the-wild.jpg",
+    "esNuevo": false,
+    "stock": 7,
+    "precio": 60000
+  },
+  {
+    "id": 2,
+    "nombre": "Minecraft",
+    "lanzamiento": 2011,
+    "sinopsis": "Un juego de construccion y supervivencia en un mundo de bloques que permite explorar, crear y enfrentar distintas criaturas.",
+    "imagen": "/assets/minecraft.png",
+    "esNuevo": false,
+    "stock": 4,
+    "precio": 25000
+  },
+  {
+    "id": 3,
+    "nombre": "The Witcher 3: Wild Hunt",
+    "lanzamiento": 2015,
+    "sinopsis": "El brujo Geralt de Rivia recorre un continente en guerra mientras busca a Ciri y se enfrenta a una amenaza sobrenatural.",
+    "imagen": "/assets/the-witcher-3.jpg",
+    "esNuevo": false,
+    "stock": 6,
+    "precio": 40000
+  },
+  {
+    "id": 4,
+    "nombre": "Super Mario Odyssey",
+    "lanzamiento": 2017,
+    "sinopsis": "Mario viaja por distintos reinos junto a Cappy para rescatar a la princesa Peach de Bowser.",
+    "imagen": "/assets/super-mario-odyssey.jpg",
+    "esNuevo": false,
+    "stock": 8,
+    "precio": 55000
+  },
+  {
+    "id": 5,
+    "nombre": "Counter-Strike 2",
+    "lanzamiento": 2023,
+    "sinopsis": "Un juego de disparos competitivo en el que terroristas y antiterroristas se enfrentan en rondas basadas en objetivos.",
+    "imagen": "/assets/counter-strike-2.jpg",
+    "esNuevo": false,
+    "stock": 10,
+    "precio": 20000
+  },
+  {
+    "id": 6,
+    "nombre": "Grand Theft Auto V",
+    "lanzamiento": 2013,
+    "sinopsis": "Tres criminales con vidas muy distintas unen sus destinos en Los Santos para llevar a cabo una serie de grandes golpes.",
+    "imagen": "/assets/grand-theft-auto-v.jpg",
+    "esNuevo": false,
+    "stock": 5,
+    "precio": 30000
+  },
+  {
+    "id": 7,
+    "nombre": "Cyberpunk 2077",
+    "lanzamiento": 2020,
+    "sinopsis": "V, un mercenario de Night City, busca sobrevivir mientras persigue un implante que promete la inmortalidad.",
+    "imagen": "/assets/cyberpunk-2077.jpg",
+    "esNuevo": false,
+    "stock": 3,
+    "precio": 45000
+  },
+  {
+    "id": 8,
+    "nombre": "Red Dead Redemption 2",
+    "lanzamiento": 2018,
+    "sinopsis": "Arthur Morgan y la banda de Dutch van der Linde intentan sobrevivir al final de la era del Salvaje Oeste.",
+    "imagen": "/assets/red-dead-redemption-2.jpg",
+    "esNuevo": false,
+    "stock": 2,
+    "precio": 50000
+  },
+  {
+    "id": 9,
+    "nombre": "God of War",
+    "lanzamiento": 2018,
+    "sinopsis": "Kratos y su hijo Atreus emprenden un viaje por los paisajes de la mitologia nordica para cumplir el ultimo deseo de Faye.",
+    "imagen": "/assets/god-of-war.jpg",
+    "esNuevo": false,
+    "stock": 9,
+    "precio": 35000
+  },
+  {
+    "id": 10,
+    "nombre": "Hollow Knight",
+    "lanzamiento": 2017,
+    "sinopsis": "Un misterioso caballero explora las ruinas del reino de Hallownest y descubre los secretos de una antigua infeccion.",
+    "imagen": "/assets/hollow-knight.jpg",
+    "esNuevo": false,
+    "stock": 6,
+    "precio": 15000
+  },
+  {
+    "id": 11,
+    "nombre": "Elden Ring",
+    "lanzamiento": 2022,
+    "sinopsis": "Un exiliado regresa a las Tierras Intermedias para reclamar el poder del Circulo de Elden.",
+    "imagen": "/assets/elden-ring.jpg",
+    "esNuevo": false,
+    "stock": 4,
+    "precio": 50000
+  },
+  {
+    "id": 12,
+    "nombre": "Baldur's Gate 3",
+    "lanzamiento": 2023,
+    "sinopsis": "Un grupo de aventureros debe resistir una invasion mientras descubre poderes y secretos que amenazan al mundo.",
+    "imagen": "/assets/baldurs-gate-3.jpg",
+    "esNuevo": false,
+    "stock": 7,
+    "precio": 65000
+  },
+  {
+    "id": 13,
+    "nombre": "Hades",
+    "lanzamiento": 2020,
+    "sinopsis": "Zagreo intenta escapar del inframundo griego enfrentandose una y otra vez a sus criaturas y guardianes.",
+    "imagen": "/assets/hades.jpg",
+    "esNuevo": false,
+    "stock": 5,
+    "precio": 25000
+  },
+  {
+    "id": 14,
+    "nombre": "Resident Evil 4",
+    "lanzamiento": 2023,
+    "sinopsis": "Leon Kennedy debe rescatar a la hija del presidente en una aldea dominada por una misteriosa infección.",
+    "imagen": "/assets/resident-evil-4.jpg",
+    "esNuevo": false,
+    "stock": 8,
+    "precio": 60000
+  },
+  {
+    "id": 15,
+    "nombre": "Sekiro: Shadows Die Twice",
+    "lanzamiento": 2019,
+    "sinopsis": "Un shinobi busca rescatar a su joven señor y vengarse de quienes lo dejaron al borde de la muerte.",
+    "imagen": "/assets/sekiro-shadows-die-twice.jpg",
+    "esNuevo": false,
+    "stock": 3,
+    "precio": 55000
+  },
+  {
+    "id": 16,
+    "nombre": "Dark Souls III",
+    "lanzamiento": 2016,
+    "sinopsis": "Un no muerto debe enfrentarse a los Señores de la Ceniza en un mundo condenado a repetirse.",
+    "imagen": "/assets/dark-souls-iii.jpg",
+    "esNuevo": false,
+    "stock": 6,
+    "precio": 30000
+  },
+  {
+    "id": 17,
+    "nombre": "Portal 2",
+    "lanzamiento": 2011,
+    "sinopsis": "Una serie de acertijos con portales pone a prueba la lógica mientras una inteligencia artificial controla el laboratorio.",
+    "imagen": "/assets/portal-2.jpg",
+    "esNuevo": false,
+    "stock": 9,
+    "precio": 10000
+  },
+  {
+    "id": 18,
+    "nombre": "Stardew Valley",
+    "lanzamiento": 2016,
+    "sinopsis": "El jugador hereda una granja y construye una nueva vida cultivando, explorando y formando vínculos.",
+    "imagen": "/assets/stardew-valley.jpg",
+    "esNuevo": false,
+    "stock": 10,
+    "precio": 20000
+  },
+  {
+    "id": 19,
+    "nombre": "Death Stranding",
+    "lanzamiento": 2019,
+    "sinopsis": "Sam Porter Bridges atraviesa un mundo fracturado para reconectar a la humanidad y llevar esperanza a comunidades aisladas.",
+    "imagen": "/assets/death-stranding.jpg",
+    "esNuevo": false,
+    "stock": 2,
+    "precio": 35000
+  },
+  {
+    "id": 20,
+    "nombre": "Helldivers 2",
+    "lanzamiento": 2024,
+    "sinopsis": "Escuadrones de soldados luchan en cooperativo contra amenazas alienígenas para defender la democracia.",
+    "imagen": "/assets/helldivers-2.jpg",
+    "esNuevo": true,
+    "stock": 7,
+    "precio": 60000
+  },
+  {
+    "id": 21,
+    "nombre": "Black Myth: Wukong",
+    "lanzamiento": 2024,
+    "sinopsis": "Un elegido emprende un viaje por la mitologia china para descubrir la verdad detras de una antigua leyenda.",
+    "imagen": "/assets/black-myth-wukong.jpg",
+    "esNuevo": true,
+    "stock": 5,
+    "precio": 65000
+  },
+  {
+    "id": 22,
+    "nombre": "Silent Hill 2",
+    "lanzamiento": 2024,
+    "sinopsis": "James Sunderland llega a Silent Hill tras recibir una carta de su esposa fallecida y enfrenta sus propios recuerdos.",
+    "imagen": "/assets/silent-hill-2.jpg",
+    "esNuevo": true,
+    "stock": 1,
+    "precio": 70000
+  },
+  {
+    "id": 23,
+    "nombre": "Monster Hunter Wilds",
+    "lanzamiento": 2025,
+    "sinopsis": "Los cazadores exploran tierras salvajes y dinámicas mientras persiguen monstruos y protegen un ecosistema cambiante.",
+    "imagen": "/assets/monster-hunter-wilds.jpg",
+    "esNuevo": true,
+    "stock": 8,
+    "precio": 75000
+  },
+  {
+    "id": 24,
+    "nombre": "Clair Obscur: Expedition 33",
+    "lanzamiento": 2025,
+    "sinopsis": "La Expedicion 33 emprende su ultima mision para detener a una misteriosa Pintora que condena a la humanidad.",
+    "imagen": "/assets/clair-obscur-expedition-33.jpg",
+    "esNuevo": true,
+    "stock": 3,
+    "precio": 80000
+  },
+  {
+    "id": 25,
+    "nombre": "The Last of Us Part II",
+    "lanzamiento": 2020,
+    "sinopsis": "Ellie se embarca en un viaje de venganza que la obliga a enfrentar las consecuencias de sus decisiones.",
+    "imagen": "/assets/the-last-of-us-part-ii.jpg",
+    "esNuevo": false,
+    "stock": 6,
+    "precio": 45000
+  }
+]
