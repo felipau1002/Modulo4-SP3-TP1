@@ -44,7 +44,7 @@ const Tarjetas = ({ juego }) => {
             onClick={() => agregarACarrito(juego)}
             className="mt-auto w-full rounded-lg bg-acento px-3 py-2 text-xs font-bold text-fondo transition hover:bg-acento-fuerte hover:text-texto"
           >
-            Agregar a tu wishlist
+            Agregar a tu carrito
           </button>
         )}
       </div>
