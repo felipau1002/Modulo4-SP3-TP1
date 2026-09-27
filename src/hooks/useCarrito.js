@@ -6,11 +6,11 @@ function useCarrito() {
     const [carrito, setCarrito] = useLocalStorage('juegos:carrito', [])
 
 
-    //
+    // operacion para deducir la cantidad total de juegos añadidios al carrito
     const cantidadTotal = carrito.reduce((acumulador, juego) => acumulador + juego.cantidad, 0)
 
 
-    //
+    // operacion para deducir el precio total del carrito
     const precioTotal = carrito.reduce((acumulador, juego) => acumulador + (juego.precio * juego.cantidad), 0)
 
 
@@ -20,7 +20,7 @@ function useCarrito() {
     }
 
 
-    // esta funcion agrega un juego nnuevo a la lista solo si no existe en la lista, si ya existe no hace nada
+    // esta funcion agrega un juego nuevo al carrito solo si no existe en la lista, si ya existe agrega uno mas a la cantidad total
     const agregarACarrito = (juego) => {
         const juegoYaExiste = carrito.find(
             (i) => i.id === juego.id
@@ -59,13 +59,13 @@ function useCarrito() {
 
 
     const vaciarCarrito = () => {
-        if (confirm('Seguro que queres vaciar tu lista?')) {
+        if (confirm('Seguro que queres vaciar tu carrito?')) {
             setCarrito([])
         }
     }
 
 
-    //
+    // esta funcion sirve para modificar la cantidad de un juego en el carrito, y si llega a 0 lo elimina
     const cambiarCantidad = (id, nuevaCantidad) => {
         if(nuevaCantidad <= 0) {
             quitarDeCarrito(id)
@@ -85,7 +85,7 @@ function useCarrito() {
     const totalCarrito = carrito.length
 
 
-    return { carrito, cantidadTotal, precioTotal, estaEnCarrito, agregarACarrito, quitarDeCarrito, vaciarCarrito, cambiarCantidad, totalCarrito }
+    return { carrito, setCarrito, cantidadTotal, precioTotal, estaEnCarrito, agregarACarrito, quitarDeCarrito, vaciarCarrito, cambiarCantidad, totalCarrito }
 }
 
 export default useCarrito

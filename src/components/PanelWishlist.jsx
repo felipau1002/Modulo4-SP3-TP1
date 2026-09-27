@@ -3,9 +3,9 @@ import { VISTAS } from "../data/vistas"
 import { formatearPrecio } from "../utils/formatearPrecio"
 
 
-const PanelWishlist = ({ totalCarrito, useToggle }) => {
+const PanelWishlist = ({ useToggle }) => {
 
-    const { carrito, cambiarCantidad, agregarACarrito, vaciarCarrito, setVista, precioTotal } = useCarritoContext()
+    const { carrito, cambiarCantidad, agregarACarrito, vaciarCarrito, setVista, precioTotal, totalCarrito } = useCarritoContext()
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#071019]/75 p-4 backdrop-blur-sm">
@@ -15,7 +15,7 @@ const PanelWishlist = ({ totalCarrito, useToggle }) => {
                     <p className="text-xs font-bold uppercase tracking-[0.18em] text-acento">Colección personal</p>
                     <h2 className="mt-1 text-xl font-extrabold">Mi Carrito <span className="text-texto-suave">({totalCarrito})</span></h2>
                 </div>
-                <button onClick={useToggle} aria-label="Cerrar wishlist" className="rounded-lg border border-borde px-3 py-1 text-xl leading-none text-texto-suave transition hover:border-acento hover:text-acento">
+                <button onClick={useToggle} aria-label="Cerrar" className="rounded-lg border border-borde px-3 py-1 text-xl leading-none text-texto-suave transition hover:border-acento hover:text-acento">
                     ×
                 </button>
             </div>
@@ -37,7 +37,7 @@ const PanelWishlist = ({ totalCarrito, useToggle }) => {
                                     -
                                 </button>
                                 <span className="px-4">{juego.cantidad}</span>
-                                <button onClick={() => agregarACarrito(juego)} className="flex size-8 items-center justify-center rounded-md border border-borde bg-superficie text-lg font-bold text-acento transition hover:border-acento hover:bg-acento/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-acento">
+                                <button onClick={() => agregarACarrito(juego)} aria-label="Sumar uno" className="flex size-8 items-center justify-center rounded-md border border-borde bg-superficie text-lg font-bold text-acento transition hover:border-acento hover:bg-acento/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-acento">
                                     +
                                 </button>
                             </div>
@@ -54,9 +54,13 @@ const PanelWishlist = ({ totalCarrito, useToggle }) => {
                 <button onClick={vaciarCarrito} className="w-full rounded-lg border border-peligro/60 px-4 py-2.5 text-sm font-bold text-peligro transition hover:bg-peligro hover:text-fondo">
                     Vaciar carrito
                 </button>
-                <>
-                    <button onClick={() => {setVista(VISTAS.CHECKOUT)}} className="mt-3 w-full border border-acento/90 rounded-lg px-3 py-2 text-xs font-bold text-acento transition hover:bg-acento hover:text-fondo">Comprar - {formatearPrecio(precioTotal)}</button>
-                </>
+
+                <button onClick={() => {
+                    totalCarrito === 0 ? alert('Agrega al menos un juego para comprar') : setVista(VISTAS.CHECKOUT)
+                }} className="mt-3 w-full border border-acento/90 rounded-lg px-3 py-2 text-xs font-bold text-acento transition hover:bg-acento hover:text-fondo">
+                    Comprar - {formatearPrecio(precioTotal)}
+                </button>
+                
             </div>
 
         </div>

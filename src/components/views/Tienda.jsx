@@ -24,8 +24,7 @@ export const Tienda = () => {
   return (
     <>
       <header>
-        <NavBar 
-          totalCarrito={totalCarrito}
+        <NavBar
           busqueda={busqueda}
           setBusqueda={setBusqueda}
           toggle={toggle}
@@ -49,7 +48,6 @@ export const Tienda = () => {
         {isOn && (
           <PanelWishlist
             useToggle={toggle}
-            totalCarrito={totalCarrito}
           />
         )}
       </main>

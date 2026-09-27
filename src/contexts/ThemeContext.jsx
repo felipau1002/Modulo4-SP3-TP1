@@ -7,18 +7,18 @@ const ThemeContext = createContext(null)
 
 export function ThemeProvider({ children }) {
     
-    const [oscuro, setOscuro] = useLocalStorage('juegos:tema', false)
+    const [tema, setTema] = useLocalStorage('juegos:tema', false)
 
     useEffect(() => {
-        document.documentElement.dataset.tema = oscuro ? 'claro' : 'oscuro'
-    }, [oscuro])
+        document.documentElement.dataset.tema = tema ? 'claro' : 'oscuro'
+    }, [tema])
 
     const cambiarTema = () => {
-        setOscuro((temaActual) => !temaActual)
+        setTema((temaActual) => !temaActual)
     }
 
     return(
-        <ThemeContext.Provider value={{oscuro, cambiarTema}} >
+        <ThemeContext.Provider value={{tema, cambiarTema}} >
             {children}
         </ThemeContext.Provider>
     )
@@ -28,7 +28,9 @@ export function ThemeProvider({ children }) {
 export function useThemeContext() {
     const contexto = useContext(ThemeContext)
 
-    // error
+    if (!contexto) {
+    throw new Error('useThemeContext() tiene que usarse adentro de <ThemeProvider>')
+    }
 
     return contexto
 }
